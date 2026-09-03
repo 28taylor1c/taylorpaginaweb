@@ -26,7 +26,7 @@
                 width: 80px;
                 height: 80px;
             }
-            div p {
+            .artigo-autor {
                 font-weight: bold;
             }
         </style>
@@ -42,9 +42,19 @@
             <div>
 
                 <h2>meu primeiro post</h2>
-                <p>por: Taylor francisco</p>
+                <p class="artigo-autor">por: Taylor francisco</p>
                 <p>boas vinda ao meu novo blog! aqui vou compartilhar dicas de programação e curiosidade da area de tecnologia.</p>
+                <button>🥀​ <span>0</span></button>
             </div>
             </main>    
     </body>
+    <script>
+        const botao = document.querySelector("button");
+        botao.addEventListener("click", botaoclicado);
+
+        function botaoclicado(){
+            console.log("fui clicado");
+        }
+    </script>
 </html>
+
