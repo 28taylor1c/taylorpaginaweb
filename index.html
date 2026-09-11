@@ -5,35 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blog</title>
-    <style>
-        header {
-            background-color: #2E4D6E;
-            color: #FFFFFF;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-        }
-
-        main {
-            background-color: #FFFFFF;
-            color: #2E4D6E;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-        }
-        article{
-            display: flex;
-        }
-        img {
-            width: 80px;
-            height: 80px;
-        }
-
-        .artigo-autor {
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -61,7 +33,21 @@
                 alt="Ilustração em estilo cartoon de uma pessoa de óculos e suéter azul sentada à mesa. Ela segura uma caneta, escreve em um caderno ao lado de um notebook e segura um livro com a palavra blog na capa">
             <div>
     
-                <h2>meu segundo post</h2>
+                <h2>por que o nome "bluetooth"</h2>
+                <p class="artigo-autor">por: Taylor francisco</p>
+                <p>boas vinda ao meu novo blog! aqui vou compartilhar dicas de programação e curiosidade da area de
+                    tecnologia.</p>
+                <button>🥀​ <span>0</span></button>
+                <button>👍​​ <span>0</span></button>
+            </div>
+        </article>
+
+        article>
+            <img src="imagem-robo.png"
+                alt="Ilustração em estilo cartoon de uma pessoa de óculos e suéter azul sentada à mesa. Ela segura uma caneta, escreve em um caderno ao lado de um notebook e segura um livro com a palavra blog na capa">
+            <div>
+    
+                <h2>meu terceiro post</h2>
                 <p class="artigo-autor">por: Taylor francisco</p>
                 <p>boas vinda ao meu novo blog! aqui vou compartilhar dicas de programação e curiosidade da area de
                     tecnologia.</p>
@@ -70,29 +56,9 @@
             </div>
         </article>
     </main>
+
+    <script src="script.js"></script>
 </body>
-<script>
-    const botoes = document.querySelector("button");
-    
-    botoes.forEach(function (botao) {
-        let curtiu = false;
-        botao.addEventListener("click", botaoclicado);
-        function botaoclicado() {
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-            if (curtiu === false){
-                texto.textContent++;
-                curtiu = true;
-            }else{
-                texto.textContent--;
-                curtiu = false
-            }
-        }
 
-    })
-
-
-
-</script>
 
 </html>
